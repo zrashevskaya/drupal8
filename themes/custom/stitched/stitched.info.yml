@@ -1,0 +1,14 @@
+name: Stitched
+type: theme
+description: A cuddly custom theme
+core: 8.x
+base theme: bartik
+libraries:
+  - stitched/global-styling
+regions:
+  header: Header
+  featured: Featured
+  content: Content
+  sidebar_first: First sidebar
+  sidebar_second: Second sidebar
+  footer: Footer

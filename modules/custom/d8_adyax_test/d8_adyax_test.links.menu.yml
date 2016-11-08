@@ -1,0 +1,10 @@
+entity.d8_adyax_test.collection:
+  title: 'Adyax Test Entity: Adyax Test Listing'
+  route_name: entity.d8_adyax_test.collection
+  description: 'List Adyax Test'
+  weight: 10
+d8_adyax_test.admin.structure.settings:
+  title: 'Adyax Test Settings'
+  description: 'Configure Adyax Test entity'
+  route_name:  d8_adyax_test.d8_adyax_test_settings
+  parent: system.admin_structure

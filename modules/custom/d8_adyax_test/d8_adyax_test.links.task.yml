@@ -1,0 +1,20 @@
+d8_adyax_test.settings_tab:
+  route_name: d8_adyax_test.d8_adyax_test_settings
+  title: Settings
+  base_route: d8_adyax_test.d8_adyax_test_settings
+
+d8_adyax_test.view:
+  route_name: entity.d8_adyax_test.canonical
+  base_route: entity.d8_adyax_test.canonical
+  title: View
+
+d8_adyax_test.page_edit:
+  route_name: entity.d8_adyax_test.edit_form
+  base_route: entity.d8_adyax_test.canonical
+  title: Edit
+
+d8_adyax_test.delete_confirm:
+  route_name:  entity.d8_adyax_test.delete_form
+  base_route:  entity.d8_adyax_test.canonical
+  title: Delete
+  weight: 10

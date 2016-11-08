@@ -1,0 +1,5 @@
+name: 'D8 Subscription'
+description: 'This module allows to add subscription form.'
+core: 8.x
+package: 'Custom Modules'
+type: 'module'

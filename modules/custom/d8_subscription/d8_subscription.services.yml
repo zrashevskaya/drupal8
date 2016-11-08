@@ -1,0 +1,6 @@
+services:
+  d8_subscription.entity.manager:
+      class: Drupal\d8_subscription\TestDecorator
+      parent: container.trait
+      decorates: entity.manager
+      arguments: ['@d8_subscription.entity.manager.inner']

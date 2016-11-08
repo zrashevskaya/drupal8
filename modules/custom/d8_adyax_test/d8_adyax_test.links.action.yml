@@ -1,0 +1,10 @@
+d8_adyax_test.d8_adyax_test_add:
+  # Which route will be called by the link
+  route_name: d8_adyax_test.d8_adyax_test_add
+  title: 'Add Adyax Test'
+
+  # Where will the link appear, defined by route name.
+  appears_on:
+    - entity.d8_adyax_test.collection
+    - entity.d8_adyax_test.canonical
+

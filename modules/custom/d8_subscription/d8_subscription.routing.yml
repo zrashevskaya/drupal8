@@ -1,0 +1,15 @@
+d8_subscription.content:
+  path: '/d8_subscription'
+  defaults:
+    _controller: 'Drupal\d8_subscription\Controller\d8SubscriptionController::content'
+    _title: 'Hello world'
+  requirements:
+    _permission: 'access content'
+
+subscription.form:
+      path: '/subscription'
+      defaults:
+        _title: 'Form for Subscription'
+        _form: 'Drupal\d8_subscription\Form\SubscriptionForm'
+      requirements:
+        _permission: 'access content'

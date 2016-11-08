@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Visual styles for Stitched's blocks.
+ */
+
+/* Block has it's own content wrapper. */
+#block-helloblock {
+    margin-top: 10px;
+    background: #99cb84;
+}

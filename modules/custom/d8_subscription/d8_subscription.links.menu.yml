@@ -1,0 +1,13 @@
+d8_subscription.menu:
+  title: 'D8 Subscription page'
+  description: 'Return hello world'
+  parent: system.menu
+  route_name: d8_subscription.content
+  weight: 100
+
+d8_subscription.form:
+  title: 'Subscription form'
+  description: 'Return subscription form'
+  parent: system.menu
+  route_name: subscription.form
+  weight: 99

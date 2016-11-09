@@ -48,6 +48,7 @@ class D8AdyaxTestListBuilder extends EntityListBuilder {
     $header['client_name'] = $this->t('Client Name');
     $header['prefered_brand'] = $this->t('Prefered Brand');
     $header['products_owned_count'] = $this->t('Products owned count');
+    $header['date'] = $this->t('Extra field "DATE"');
     return $header + parent::buildHeader();
   }
 
@@ -60,6 +61,7 @@ class D8AdyaxTestListBuilder extends EntityListBuilder {
     $row['client_name'] = $entity->link();
     $row['prefered_brand'] = $this->getTermName($entity->get('prefered_brand')->getString());
     $row['products_owned_count'] = $entity->products_owned_count->value;
+    $row['date'] = date('Y-m-d h:m:s', $entity->date->value);
     return $row + parent::buildRow($entity);
   }
 

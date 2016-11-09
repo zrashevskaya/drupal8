@@ -1,0 +1,5 @@
+name: Custom routes testing
+type: module
+description: 'Provides custom routing tests.'
+package: Custom
+core: 8.x

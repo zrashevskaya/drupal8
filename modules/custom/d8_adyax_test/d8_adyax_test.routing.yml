@@ -22,7 +22,7 @@ d8_adyax_test.d8_adyax_test_add:
   path: '/d8_adyax_test/add'
   defaults:
   # Calls the form.add controller, defined in the contact entity.
-    _entity_form: content_entity_example_contact.add
+    _entity_form: d8_adyax_test.add
     _title: 'Add Adyax Test'
   requirements:
     _entity_create_access: 'd8_adyax_test'

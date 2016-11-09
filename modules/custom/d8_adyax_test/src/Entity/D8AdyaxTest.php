@@ -228,6 +228,26 @@ class D8AdyaxTest extends ContentEntityBase implements D8AdyaxTestInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
+    // New field added in hook_update_8001.
+    $fields['date'] = BaseFieldDefinition::create('timestamp')
+      ->setLabel(t('Date'))
+      ->setDescription(t('The date extrafield.'))
+      ->setDefaultValue(time()-30*24*60*60)
+      ->setSettings(array(
+        'default_value' => time(),
+      ))
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'date',
+        'weight' => -2,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'date',
+        'weight' => -2,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
     // Owner field of the Adyax Test.
     // Entity reference field, holds the reference to the user object.
     // The view shows the user name field of the user.

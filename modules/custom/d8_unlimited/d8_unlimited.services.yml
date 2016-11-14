@@ -1,0 +1,5 @@
+services:
+  path_processor.unlimited:
+    class: Drupal\d8_unlimited\PathProcessor\UnlimitedPathProcessor
+    tags:
+      - { name: path_processor_inbound, priority: 300}

@@ -1,0 +1,8 @@
+d8_routes.custom:
+  path: '/custom/{params}'
+  defaults:
+    _title: 'Custom data'
+    _controller: 'Drupal\d8_routes\Controller\D8RoutesCustom::content'
+    params: ''
+  requirements:
+    _access: 'TRUE'

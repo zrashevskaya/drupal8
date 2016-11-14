@@ -3,3 +3,7 @@ services:
     class: Drupal\d8_routes\Routing\RouteSubscriber
     tags:
       - { name: event_subscriber }
+  path_processor.d8_routes:
+    class: Drupal\d8_routes\PathProcessor\D8RoutesPathProcessor
+    tags:
+      - { name: path_processor_inbound, priority: 300}

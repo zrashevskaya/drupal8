@@ -4,8 +4,6 @@ services:
     class: Drupal\Console\Utils\TranslatorManager
   console.configuration_manager:
     class: Drupal\Console\Utils\ConfigurationManager
-  console.drupal_checker:
-      class: Drupal\Console\Utils\DrupalChecker
   console.requirement_checker:
     class: Drupal\Console\Utils\RequirementChecker
   console.chain_queue:
@@ -49,7 +47,7 @@ services:
       - { name: drupal.command }
   console.init:
     class: Drupal\Console\Command\InitCommand
-    arguments: ['@console.show_file', '@console.configuration_manager', '@console.init_generator']
+    arguments: ['@console.show_file', '@console.configuration_manager', '@console.init_generator', '@app.root', '@?console.root']
     tags:
       - { name: drupal.command }
   console.settings_debug:

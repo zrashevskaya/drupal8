@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\Tests\conditional_fields\Unit\ConditionalFieldControllerTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/Unit/ConditionalFieldControllerTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.019232">
+    <testcase name="testEntityTypeList" class="Drupal\Tests\conditional_fields\Unit\ConditionalFieldControllerTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/Unit/ConditionalFieldControllerTest.php" line="66" assertions="2" time="0.019232"/>
+  </testsuite>
+</testsuites>

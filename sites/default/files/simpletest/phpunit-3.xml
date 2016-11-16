@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldStatesTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldStatesTest.php" tests="1" assertions="9" failures="0" errors="0" time="20.802707">
+    <testcase name="testCreateConfig" class="Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldStatesTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldStatesTest.php" line="17" assertions="9" time="20.802707"/>
+  </testsuite>
+</testsuites>

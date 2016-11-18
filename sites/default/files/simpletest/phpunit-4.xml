@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Drupal\Tests\conditional_fields\Unit\ConditionalFieldControllerTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/Unit/ConditionalFieldControllerTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.020110">
-    <testcase name="testEntityTypeList" class="Drupal\Tests\conditional_fields\Unit\ConditionalFieldControllerTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/Unit/ConditionalFieldControllerTest.php" line="66" assertions="2" time="0.020110"/>
+  <testsuite name="Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldTaxonomyTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldTaxonomyTest.php" tests="1" assertions="7" failures="0" errors="1" time="21.655457">
+    <testcase name="testCreateConfig" class="Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldTaxonomyTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldTaxonomyTest.php" line="142" assertions="7" time="21.655457">
+      <error type="PHPUnit_Framework_ExceptionWrapper">Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldTaxonomyTest::testCreateConfig
+Zumba\GastonJS\Exception\JavascriptError: One or more errors were raised in the Javascript code on the page.
+            If you don't care about these errors, you can ignore them by
+            setting js_errors: false in your Poltergeist configuration (see documentation for details).
+PoltergeistAgent.ObsoleteNode
+PoltergeistAgent.ObsoleteNode
+    at /var/www/drupal8.local/vendor/jcalderonzumba/gastonjs/src/Client/agent.js:138
+    at phantomjs://webpage.evaluate():83 in selectOptionOnElement
+    at phantomjs://webpage.evaluate():112 in selectSetValue
+    at phantomjs://webpage.evaluate():197
+    at phantomjs://webpage.evaluate():211
+    at phantomjs://webpage.evaluate():212
+    at phantomjs://webpage.evaluate():212
+    at phantomjs://webpage.evaluate():212
+
+/var/www/drupal8.local/vendor/jcalderonzumba/gastonjs/src/Browser/BrowserBase.php:119
+/var/www/drupal8.local/vendor/jcalderonzumba/gastonjs/src/Browser/BrowserBase.php:99
+/var/www/drupal8.local/vendor/jcalderonzumba/gastonjs/src/Browser/BrowserScriptTrait.php:16
+/var/www/drupal8.local/vendor/jcalderonzumba/mink-phantomjs-driver/src/FormManipulationTrait.php:39
+/var/www/drupal8.local/vendor/behat/mink/src/Element/NodeElement.php:105
+/var/www/drupal8.local/core/tests/Drupal/Tests/BrowserTestBase.php:861
+/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldTaxonomyTest.php:168
+</error>
+    </testcase>
   </testsuite>
 </testsuites>

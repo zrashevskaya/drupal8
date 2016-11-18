@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Drupal\Tests\conditional_fields\Unit\ConditionalFieldControllerTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/Unit/ConditionalFieldControllerTest.php" tests="1" assertions="2" failures="0" errors="0" time="0.019509">
-    <testcase name="testEntityTypeList" class="Drupal\Tests\conditional_fields\Unit\ConditionalFieldControllerTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/Unit/ConditionalFieldControllerTest.php" line="66" assertions="2" time="0.019509"/>
+  <testsuite name="Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldTaxonomyTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldTaxonomyTest.php" tests="1" assertions="0" failures="0" errors="1" time="0.000000">
+    <testcase name="testCreateConfig" class="Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldTaxonomyTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldTaxonomyTest.php" line="142" assertions="0" time="0.000000">
+      <error type="PHPUnit_Framework_Exception">Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldTaxonomyTest::testCreateConfig
+PHPUnit_Framework_Exception: XDebug could not open the remote debug file '/tmp/xdebug.log'.
+XDebug could not open the remote debug file '/tmp/xdebug.log'.
+XDebug could not open the remote debug file '/tmp/xdebug.log'.
+XDebug could not open the remote debug file '/tmp/xdebug.log'.
+XDebug could not open the remote debug file '/tmp/xdebug.log'.
+XDebug could not open the remote debug file '/tmp/xdebug.log'.
+XDebug could not open the remote debug file '/tmp/xdebug.log'.
+
+</error>
+    </testcase>
   </testsuite>
 </testsuites>

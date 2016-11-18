@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldStatesTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldStatesTest.php" tests="1" assertions="9" failures="0" errors="0" time="20.802707">
-    <testcase name="testCreateConfig" class="Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldStatesTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldStatesTest.php" line="17" assertions="9" time="20.802707"/>
+  <testsuite name="Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldTaxonomyTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldTaxonomyTest.php" tests="1" assertions="0" failures="0" errors="1" time="14.288990">
+    <testcase name="testCreateConfig" class="Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldTaxonomyTest" file="/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldTaxonomyTest.php" line="113" assertions="0" time="14.288990">
+      <error type="PHPUnit_Framework_ExceptionWrapper">Drupal\Tests\conditional_fields\FunctionalJavascript\ConditionalFieldTaxonomyTest::testCreateConfig
+Drupal\Core\Entity\Exception\NoCorrespondingEntityClassException: The Drupal\taxonomy\Entity\Vocabulary class does not correspond to an entity type.
+
+/var/www/drupal8.local/core/lib/Drupal/Core/Entity/EntityTypeRepository.php:98
+/var/www/drupal8.local/core/lib/Drupal/Core/Entity/EntityManager.php:378
+/var/www/drupal8.local/core/lib/Drupal/Core/Entity/Entity.php:515
+/var/www/drupal8.local/modules/custom/d8_taxonomy/d8_taxonomy.install:22
+/var/www/drupal8.local/core/lib/Drupal/Core/Extension/ModuleHandler.php:391
+/var/www/drupal8.local/core/lib/Drupal/Core/Extension/ModuleInstaller.php:287
+/var/www/drupal8.local/core/lib/Drupal/Core/ProxyClass/Extension/ModuleInstaller.php:83
+/var/www/drupal8.local/core/tests/Drupal/Tests/BrowserTestBase.php:1134
+/var/www/drupal8.local/core/tests/Drupal/Tests/BrowserTestBase.php:470
+/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldBase.php:29
+/var/www/drupal8.local/modules/custom/conditional_fields/tests/src/FunctionalJavascript/ConditionalFieldTaxonomyTest.php:71
+</error>
+    </testcase>
   </testsuite>
 </testsuites>

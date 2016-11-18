@@ -63,6 +63,7 @@ abstract class BrowserTestBase extends \PHPUnit_Framework_TestCase {
     createUser as drupalCreateUser;
   }
 
+
   /**
    * Class loader.
    *

@@ -1,0 +1,57 @@
+<?php
+
+/**
+ * @file
+ * File.
+ */
+
+use \Drupal\taxonomy\Entity\Term;
+use \Drupal\taxonomy\Entity\Vocabulary;
+
+/**
+ * Implements hook_install().
+ */
+function d8_taxonomy_install() {
+  $vid = 'conditions';
+  $vocabulary_name = 'Conditions';
+  $conditions = ['Visible','Invisible'];
+
+    $vocabulary = Vocabulary::create(array(
+    'vid' => $vid,
+    'machine_name' => $vid,
+    'name' => $vocabulary_name,
+  ));
+  $vocabulary->save();
+  foreach ($conditions as $condition) {
+    Term::create(array(
+      'parent' => array(),
+      'name' => $condition,
+      'vid' => $vid,
+    ))->save();
+  }
+//
+//  $terms = \Drupal::entityTypeManager()
+//    ->getStorage('taxonomy_term')
+//    ->loadTree($vid);
+//  foreach ($terms as $term) {
+//    $voc[] = $term->tid;
+//  }
+
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function d8_taxonomy_uninstall() {
+
+  $tids = \Drupal::entityQuery('taxonomy_term')
+    ->condition('vid', 'conditions')
+    ->execute();
+
+  $controller = \Drupal::entityTypeManager()->getStorage('taxonomy_term');
+  $terms = $controller->loadMultiple($tids);
+  $controller->delete($terms);
+
+  Vocabulary::load('conditions')->delete();
+
+}

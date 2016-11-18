@@ -1,0 +1,7 @@
+name: Taxonomy create for conditional fields testing
+type: module
+description: 'Provides Taxonomy for Conditional fields testing.'
+package: Custom
+core: 8.x
+dependencies:
+  - conditional_fields
